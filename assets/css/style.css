@@ -1,0 +1,178 @@
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.debug{
+    border: 1px solid red;
+    background-color: aqua;
+}
+
+img{
+    display: block;
+    width: 100%;
+}
+
+.relative{
+    position: relative;
+}
+
+.absolute{
+    position: absolute;
+}
+
+/* misure viewport */
+#viewport{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+
+/* header */
+header{
+    height: 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+nav{
+    height: 100%;
+}
+
+.bg-gray{
+    background-color: lightgray;
+}
+
+.fa-magnifying-glass{
+    top: 10px;
+    left: 5px;
+}
+
+::placeholder{
+    padding-left: 15px;
+}
+
+/* dropdown bell */
+.dropdown-toggle{
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown-toggle::before{
+    opacity: 0;
+}
+
+.fa-bell{
+    color: #ff8f00;
+}
+
+/* aside */
+aside{
+    height: calc(100vh - 70px);
+    width: 100px;
+    margin-top: 70px;
+    background: url(../img/sidebar-bg.png);
+    background-color: #051e34;
+    font-size: 0.8rem;
+}
+
+.hover:hover{
+    background-color: grey;
+}
+
+
+/* main */
+main{
+    width: calc(100% - 100px);
+    height: calc(100% - 70px);
+    margin-top: 70px;
+    overflow: auto;
+}
+
+/* banner */
+#banner{
+    background-color: #1b72e8;
+}
+
+.rounded-pill{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#canvas-btn{
+    border: 1px solid white;
+}
+
+#offcanvasRight{
+    width: 50%;
+}
+
+/* card */
+.card-title{
+    background-color: #f7f7f7;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+}
+
+#first-table-line{
+    width: 50%;
+}
+
+.fa-trash-can,
+.fa-pencil{
+    margin-left: 5px;
+}
+
+.fa-code{
+    background-color: #f26551;
+    border-radius: 50%;
+    padding: 10px 8px;
+    color: white;
+}
+
+td i{
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+
+
+@media screen and (min-width:992px){
+    aside div{
+        text-align: left;
+    }
+}
+
+@media screen and (max-width:992px){
+    #first-table-line{
+        width: 30%;
+    }
+    aside i{
+        font-size: 1.5rem;
+    }
+    #offcanvasRight{
+        width: 100%;
+    } 
+}
+
+@media screen and (max-width:768px){
+    .right-banner{
+        order: 1;
+    }
+    .left-banner{
+        order: 2;
+    }
+    .middle-banner{
+        order: 3;
+    }
+    .hidden-col{
+        display: none;
+    }
+    #first-table-line{
+        width: 50%;
+    }
+}
