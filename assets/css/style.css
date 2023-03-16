@@ -15,14 +15,6 @@ img{
     width: 100%;
 }
 
-.relative{
-    position: relative;
-}
-
-.absolute{
-    position: absolute;
-}
-
 /* misure viewport */
 #viewport{
     height: 100vh;
@@ -47,19 +39,21 @@ nav{
     background-color: lightgray;
 }
 
-.fa-magnifying-glass{
-    top: 10px;
-    left: 5px;
+#style-nav{
+    border-left: none;
 }
 
-::placeholder{
-    padding-left: 15px;
+header form .input-group .btn{
+    border-right: none;
 }
+
+
 
 /* dropdown bell */
 .dropdown-toggle{
     padding: 0;
     margin: 0;
+    border: none;
 }
 
 .dropdown-toggle::before{
@@ -102,6 +96,10 @@ main{
     background-color: rgba(0, 0, 0, 0.2);
 }
 
+.rounded-pill:hover{
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
 #canvas-btn{
     border: 1px solid white;
 }
@@ -140,6 +138,7 @@ td i{
 }
 
 
+/* MEDIA */
 
 @media screen and (min-width:992px){
     aside div{
